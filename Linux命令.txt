@@ -274,8 +274,8 @@ git常用命令
 1：git clone——复制一个项目
 2：git status——查看项目的状态
 3：git add——将项目从工作区提交到暂存区
-4：git commit——将项目从暂存区提交到分支
-5：git reset——恢复某个提交
+4：git commit——将项目从暂存区提交到本地分支
+5：git reset——恢复某个向緩存區的提交（add提交）
 6：git pull——拉取项目
 7：git push——推送项目
 8：git log——查看日志
