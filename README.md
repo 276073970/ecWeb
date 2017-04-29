@@ -5,4 +5,4 @@ Please make a folder named ecWeb firstly in your working directory, then pull th
 If you finish the steps above, just have fun with us! Come on! 
 
 ATTENTION:
-1. If you changed something, don't forget add some for it, please;
+1. If you changed something, don't forget add some notes for it, please;
