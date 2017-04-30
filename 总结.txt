@@ -104,3 +104,13 @@ IdentityFile ~/.ssh/id_rsa_aaa
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
+
+
+###################################################
+############### 直接clone #########################
+###################################################
+
+1.git clone git@github_ec:276073970/ecWeb.git .
+
+# 最后的点 是表示 clone到当前目录
+# push 操作可以直接进行
