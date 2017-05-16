@@ -1,17 +1,17 @@
-1.´´½¨ssh  ÔÚ git bash
+ï»¿1.åˆ›å»ºssh  åœ¨ git bash
   ssh-keygen -t rsa -f /c/User/GT/.ssh/id_rsa_ec  -C "username"
   
-#×¢£º 
-#-t  ±íÊ¾¼ÓÃÜÀàĞÍ rsa
-#-f  ±íÊ¾ÎÄ¼şÂ·¾¶
-#-C  ×¢ÊÍ£¬£¬£¬µÇÂ½Ê±Ê¹ÓÃµÄÓÃ»§Ãû£¿(ºóÃæÃ»ÓĞÓÃµ½)
-#id_rsa_ecÊÇË½Ô¿ÎÄ¼şÃû
+#æ³¨ï¼š 
+#-t  è¡¨ç¤ºåŠ å¯†ç±»å‹ rsa
+#-f  è¡¨ç¤ºæ–‡ä»¶è·¯å¾„
+#-C  æ³¨é‡Šï¼Œï¼Œï¼Œç™»é™†æ—¶ä½¿ç”¨çš„ç”¨æˆ·åï¼Ÿ(åé¢æ²¡æœ‰ç”¨åˆ°)
+#id_rsa_ecæ˜¯ç§é’¥æ–‡ä»¶å
 
 2.  ssh-agent ssh-add ~/.ssh/id_rsa_ec
   
-#·ÇÄ¬ÈÏid-rsaÎÄ¼şĞèÒª½«sshÌí¼Óµ½ssh-agent
+#éé»˜è®¤id-rsaæ–‡ä»¶éœ€è¦å°†sshæ·»åŠ åˆ°ssh-agent
 
-3.	ÔÚ~/.ssh/ÏÂ½¨Á¢configÎÄ¼ş£¬ÎÄ¼şÄÚÈİ£º
+3.	åœ¨~/.ssh/ä¸‹å»ºç«‹configæ–‡ä»¶ï¼Œæ–‡ä»¶å†…å®¹ï¼š
 	#user for myself github
 	Host github_gt
 	HostName github.com
@@ -30,40 +30,45 @@
 	User git
 	IdentityFile ~/.ssh/id_rsa_aaa
 	
-#×¢£º¿ÉÒÔÖ»ÓĞ1¸ö£¬Ò²¿ÉÒÔÓĞ¶à¸ö
-#Host ±íÊ¾±ğÃû£¬ÓÃÓÚÇø·ÖºÍÈ·¶¨µ±Ç° Á´½Ó µÄgitHub²Ö¿â
-#IdentityFile ±íÊ¾sshË½Ô¿ÎÄ¼ş£¬»áÓÃËüÓëÖ®±È¶Ô
+#æ³¨ï¼šå¯ä»¥åªæœ‰1ä¸ªï¼Œä¹Ÿå¯ä»¥æœ‰å¤šä¸ª
+#Host è¡¨ç¤ºåˆ«åï¼Œç”¨äºåŒºåˆ†å’Œç¡®å®šå½“å‰ é“¾æ¥ çš„gitHubä»“åº“
+#IdentityFile è¡¨ç¤ºsshç§é’¥æ–‡ä»¶ï¼Œä¼šç”¨å®ƒä¸ä¹‹æ¯”å¯¹
 
-# ssh ·½Ê½ ¹ØÁª github¿â
-# ----> ºóÃæ git remote add origin git@github_ec:276073970/ecWeb.git
-# ÆäÖĞµÄHOST¾ÍÊÇÓÃÓÚgit@HOST
+# ssh æ–¹å¼ å…³è” githubåº“
+# ----> åé¢ git remote add origin git@github_ec:276073970/ecWeb.git
+# å…¶ä¸­çš„HOSTå°±æ˜¯ç”¨äºgit@HOST
 
-4.	½«¹«Ô¿Ìí¼Óµ½gitHubºóÌ¨
-	¿ÉÒÔ²âÊÔ sshÁ´½Ó
+4.	å°†å…¬é’¥æ·»åŠ åˆ°gitHubåå°
+	å¯ä»¥æµ‹è¯• sshé“¾æ¥
 	eg:
 	ssh -T git@github_ec
-	ÏÔÊ¾½á¹ûÎª£ºHi 276073970! You've successfully authenticated, but GitHub does not provide shell access.
-	ÆäÖĞ£¬276073970 ÊÇ github²Ö¿âËùÓĞÕßµÄÓÃ»§Ãû
+	æ˜¾ç¤ºç»“æœä¸ºï¼šHi 276073970! You've successfully authenticated, but GitHub does not provide shell access.
+	å…¶ä¸­ï¼Œ276073970 æ˜¯ githubä»“åº“æ‰€æœ‰è€…çš„ç”¨æˆ·å
 
 5.	git init
 
-# ³õÊ¼»¯±¾µØ²Ö¿â
+# åˆå§‹åŒ–æœ¬åœ°ä»“åº“
 
 6.	git remote add origin git@github_ec:276073970/ecWeb.git
 
-# ¹ØÁª±¾µØ²Ö¿âÓëÔ¶³Ì²Ö¿â
-# ºóÃæ¿ÉÒÔĞŞ¸Ä£¬ÔÚ ./.git/configÎÄ¼ş
-# ĞŞ¸Ä:	url = git@github_ec:276073970/ecWeb.git
+# å…³è”æœ¬åœ°ä»“åº“ä¸è¿œç¨‹ä»“åº“
+# åé¢å¯ä»¥ä¿®æ”¹ï¼Œåœ¨ ./.git/configæ–‡ä»¶
+# ä¿®æ”¹:	url = git@github_ec:276073970/ecWeb.git
 
 7.  vim newfile
 	git add newfile
 	git commit -m "message" newfile
-	git push -u origin master	#³õ´Î
-	#git push ·ÇµÚÒ»´Î
-	
-¸½£º
+	git push -u origin master	#åˆæ¬¡
+	#git push éç¬¬ä¸€æ¬¡
 
-~/.ssh/configÎÄ¼ş 
+#æ³¨:
+#ç¬¬ä¸€æ¬¡pushçš„æ—¶å€™å¯èƒ½éœ€è¦å…ˆpullæ“ä½œ
+#git pull origin master 
+#æŒ‡å®šremotåˆ†æ”¯ 
+	
+é™„ï¼š
+
+~/.ssh/configæ–‡ä»¶ 
 
 #user for myself github
 Host github_gt
@@ -83,7 +88,7 @@ HostName github.com
 User git
 IdentityFile ~/.ssh/id_rsa_aaa
 
-./.git/configÎÄ¼ş
+./.git/configæ–‡ä»¶
 
 [core]
 	repositoryformatversion = 0
@@ -99,3 +104,15 @@ IdentityFile ~/.ssh/id_rsa_aaa
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
+
+
+###################################################
+############### ç›´æ¥clone #########################
+###################################################
+
+1.git clone git@github_ec:276073970/ecWeb.git .
+
+# æœ€åçš„ç‚¹ æ˜¯è¡¨ç¤º cloneåˆ°å½“å‰ç›®å½•
+# push æ“ä½œå¯ä»¥ç›´æ¥è¿›è¡Œ
+
+#é€‚ç”¨ä¸githubä¸Šçš„repositotyä¸ä¸ºç©º
